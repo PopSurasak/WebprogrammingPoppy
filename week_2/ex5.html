@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>เว็บ U ชอบภาษาไหน</title>
+    <style>
+        body {
+            background: radial-gradient(#CFEBFC,#2BABFC)
+;
+            text-align: center;
+            font-size: 30px;
+        }
+        Input {
+            height: 40px;
+            width: 500px;
+            border-radius: 10px;
+        }
+        h2{
+            color: blueviolet;
+            font-size: 50px;
+        }
+        p{
+            color: blue;
+        }
+        select{
+            font-size: 25px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>เว็บเรียนภาษา</h2>
+<Input id = "msg.Input"placeholder="กรุณากรอกชื่อของคุณ" type="email">
+<p id="show-msg">ยินดีต้อนรับ: </p>
+
+<h2>เลือกภาษาที่ชอบ</h2>
+
+<select id="select.input">
+    <option>โปรดเลือกตัวเลือก</option>
+    <option>JavaScript</option>
+    <option>Python</option>
+    <option>Go</option>
+    <option>html</option>
+    <option>Css</option>
+</select>
+<p id="code.like">ชอบเรียนภาษาอะไร: </p>
+    <script>
+        const msgInputElement = document.getElementById("msg.Input")
+        msgInputElement.addEventListener("input",function(){
+            const msg = this.value
+            const showMsgElement = document.getElementById("show-msg")
+            showMsgElement.innerText ='ยินดีต้อนรับ: '+msg//'ข้อความที่อ่านได้+msg อันนี้คือ default'
+        })
+
+        const msgSelectElement = document.getElementById("select.input")
+        msgSelectElement.addEventListener("change",function(){
+            const msg = this.value
+            const showMsgElement = document.getElementById("code.like")
+            showMsgElement.innerText='ภาษาที่ชอบ: '+ msg
+        })
+    </script>
+</body>
+
+</html>

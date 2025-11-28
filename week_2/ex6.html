@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>เว็บ U ชอบภาษาไหน</title>
+    <style>
+                body {
+            background: radial-gradient(#ffffff,#a1a1a1)
+;
+            text-align: center;
+            font-size: 30px;
+        }
+        Input {
+            height: 40px;
+            width: 500px;
+            border-radius: 10px;
+        }
+        h2{
+            color: blueviolet;
+            font-size: 50px;
+        }
+        p{
+            color: blue;
+        }
+        select{
+            font-size: 25px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>โปรแกรมเช็คอายุ</h1>
+    <input id="Input-age" placeholder="กรุณากรอกอายุ"type="number">
+    <button onclick="checkAge()">ตรวจสอบ</button>
+    <h1 id="age.msg">คุณอยู่ในวัย: </h1>
+
+    <script>
+        function checkAge() {
+            const ageInputElement = document.getElementById('Input-age')
+            const age= ageInputElement.value
+            const agemsgElement = document.getElementById('age.msg')
+
+
+            if (age==="") {
+                alert('คุณยังไม่ได้ใส่อายุ')
+            }
+
+            const covertAgeToNumber = +age
+            if (covertAgeToNumber >= 60) {
+                agemsgElement.innerText= 'คุณอยู่ใน: วัยผู้สูงอายุ'
+            }else if (covertAgeToNumber >= 25) {
+                agemsgElement.innerText='คุณอยูใน: วัยทำงาน'
+            }else if (covertAgeToNumber >= 13) {
+                agemsgElement.innerText='คุณอยูใน: วัยรุ่น'
+            }else if (covertAgeToNumber < 13) {
+                agemsgElement.innerText='คุณอยูใน: วัยเด็ก'
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
