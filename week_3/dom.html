@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        ,<link rel="stylesheet" href="./style.Css">
+        <title>หน้าเว็บอ้าย</title>
+    </head>
+    <body>
+    </body>
+    <center>
+        <div class="flex-header nav-manu-container prompt-regular">
+            <a class="nav-manu-item" href="index.html"> หน้าแรก</a>
+            <br>
+            <br>
+            <a class="nav-manu-item" href="https://www.facebook.com/">Facekbook ของฉัน</a>
+            <br>
+            <br>
+            <a class="nav-manu-item" href="https://www.tiktok.com/en/">tiktok ของฉัน</a>
+            <br>
+            <br>
+            <a class="nav-manu-item" href="https://www.instagram.com/">IG ของฉัน</a>
+            <br>
+            <br>
+            <a class="nav-manu-item" href="../week_2/index.html">บทเรียน week2</a>
+            <br>
+            <br>
+            <a class="nav-manu-item" href="./dom.html">บทเรียนเรื่องdom</a>
+        </div>
+        <div class="flex-header mitr-extralight">
+            <div class="header-contianer">
+                <h1 class="header-text">สวัสดี</h1>
+                <h2 class="header-text">ยินดีต้อนรับสู่ เว็บไซต์ของฉัน</h2>
+                <h3 class="header-text">ไอ้บ้า500เล่น5,000,000</h3>
+                <p class="header-text">งานอดิเรกคือนอน งานรองคือกิน</p>
+                <p class="header-text">แถวนี้มีแต่คนบ้า</p>
+            </div>
+        </div>
+        <div class="flex-header img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT13RC60zAZ8ZzDsnQmlABwlE-7Pe5KTLSU_g&s"
+                alt="รูปของฉัน" style="border-radius: 10%;">
+        </div>
+    </center>
+        <div class="flex-header prompt-regular header-contianer">
+        <h1>เรียนเรื่อง Get Element By Tag Name</h1>
+    </div>
+</body>
+    <script>
+        const aTags = document.getElementsByTagName('a')
+        console.log(aTags[1])
+        
+        const navMenuClassItem = document.getElementsByClassName('nav-manu-itme')
+        navMenuClassItem[1].interText = 'เปลี่ยนข้อความดู'
+    </script>
+</html>
