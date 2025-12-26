@@ -1,0 +1,7 @@
+@import url("https://font.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,30");
+
+body {
+ font-family:"Prompt",sans-serif;
+ background-color: aqua;
+ z-index:-9px;
+}
