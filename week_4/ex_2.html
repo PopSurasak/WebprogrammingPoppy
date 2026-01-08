@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ตรวจสอบการเข้าถึง</title>
+</head>
+<body>
+
+<h2>ระบบแจ้งเตือนเวอร์ชันและการเข้าถึง</h2>
+
+<script>
+    alert("Browser ของคุณคือ:\n" + navigator.userAgent);
+
+    if (navigator.onLine) {
+        alert("คุณออนไลน์แล้ว");
+    } else {
+        alert("คุณกำลังออฟไลน์ โปรดเชื่อมต่ออินเทอร์เน็ต");
+    }
+
+    var name = prompt("กรุณาใส่ชื่อของคุณ");
+
+    if (name !== null && name !== "") {
+        alert("สวัสดีคุณ " + name);
+    } else {
+        alert("คุณยังไม่ได้กรอกชื่อ");
+    }
+</script>
+
+</body>
+</html>
