@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <title>เว็บขายเกมอันดับ 1</title>
+
+    <!-- DaisyUI + Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gradient-to-br from-sky-300 to-indigo-300 min-h-screen font-game">
+
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="card w-full max-w-md bg-white shadow-2xl rounded-2xl">
+
+            <div class="card-body">
+                <h1 class="text-3xl font-bold text-center text-indigo-600">
+                    🎮 เว็บขายเกมอันดับ 1
+                </h1>
+                <p class="text-center text-sm text-gray-500">
+                    โหด • ตึง • คม
+                </p>
+
+                <form class="space-y-4 mt-6">
+
+                    <div>
+                        <label class="label">ชื่อ</label>
+                        <input type="text" placeholder="กรุณาระบุชื่อ"
+                            class="input input-bordered w-full">
+                    </div>
+
+                    <div>
+                        <label class="label">นามสกุล</label>
+                        <input type="text" placeholder="กรุณาระบุนามสกุล"
+                            class="input input-bordered w-full">
+                    </div>
+
+                    <div>
+                        <label class="label">E-mail</label>
+                        <input type="email" placeholder="example@email.com"
+                            class="input input-bordered w-full">
+                    </div>
+
+                    <div>
+                        <label class="label">เลือกเกมที่ต้องการ</label>
+                        <select class="select select-bordered w-full">
+                            <option disabled selected>กรุณาเลือกเกม</option>
+                            <option>Overwatch 2 (ฟรี)</option>
+                            <option>Kingdom Come: Deliverance II - 1,699฿</option>
+                            <option>33 Immortals - 2,499฿</option>
+                            <option>R.E.P.O - 200฿</option>
+                            <option>Minecraft - 699฿</option>
+                            <option>Dead by Daylight - 300฿</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="label">ขอความช่วยเหลือ</label>
+                        <textarea class="textarea textarea-bordered w-full h-24"
+                            placeholder="พิมพ์ข้อความถึงเจ้าหน้าที่"></textarea>
+                    </div>
+
+                    <button class="btn btn-primary w-full text-lg">
+                        ✅ ยืนยันคำสั่งซื้อ
+                    </button>
+
+                </form>
+
+                <div class="mt-6 text-center text-indigo-600 font-bold animate-pulse">
+                    เกมดีนะน้อง ซื้อเลย ▶▶
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
